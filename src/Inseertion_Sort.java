@@ -1,8 +1,16 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Inseertion_Sort {
     public static void main(String[] args) {
-        int arr[]={4,3,2,10,12,1,5,6};
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int[] arr=new int[n];
+        for (int i = 0; i <n ; i++) {
+            arr[i]=s.nextInt();
+        }
+
+       // int arr[]={4,3,2,10,12,1,5,6};
         System.out.println("Before Insertion Sort");
         System.out.println(Arrays.toString(arr));
         insertionsort(arr);
