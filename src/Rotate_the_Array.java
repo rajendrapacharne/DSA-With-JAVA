@@ -67,3 +67,25 @@ public class Rotate_the_Array {
 
     }
 }
+
+/*
+This code demonstrates how to rotate a given 2D array (matrix) by 90 degrees in a clockwise direction.
+
+Let's break down the code step by step:
+
+1. The initial 2D array `arr` is defined with some values representing the matrix.
+
+2. The outer `for` loop is used to iterate over each row of the matrix, and the inner `for` loop is used to iterate over each column. The values of the matrix are printed using `System.out.print` to display the original matrix.
+
+3. The `rotatearray` function is called to rotate the matrix.
+
+4. Inside the `rotatearray` function, the dimensions of the matrix (number of rows and columns) are determined.
+
+5. The first nested loop swaps the elements across the main diagonal of the matrix. This operation essentially transposes the matrix.
+
+6. The second nested loop swaps the elements of each row, starting from both ends and moving towards the center. This step flips the matrix horizontally.
+
+7. After the rotation is complete, the rotated matrix is printed using `Arrays.toString`.
+
+In summary, the code rotates the given matrix by first transposing it (swapping elements across the main diagonal) and then flipping it horizontally. This process effectively rotates the matrix by 90 degrees in a clockwise direction.
+ */
