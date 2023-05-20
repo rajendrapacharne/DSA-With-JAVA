@@ -14,18 +14,20 @@ public class findingpowerusingrecurssiion {
     }
 
     private static int powerof(int n, int pow) {
+        if(pow==0) {
+            return 1;
+        }
+        int temp = powerof(n, pow/2);
+        int result = temp * temp;
 
-        int result=1;
-        if(pow==1)
-        {
-            return n;
+        if(pow % 2 == 0) {
+            return result;
+        } else {
+            return result * n;
         }
-        else {
-            result=n*powerof(n,pow-1);
-        }
-        return result;
     }
 }
+
 
 
 /*
