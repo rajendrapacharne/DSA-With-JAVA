@@ -1,4 +1,4 @@
-# JAva_May_Programs
+# Java_May_Programs
 Welcome to the DSA Programs Repository!
 
 We are thrilled to have you here, embarking on a journey into the exciting world of Data Structures and Algorithms (DSA). This repository is your gateway to learning, exploring, and mastering the fundamental concepts that power efficient and optimized code.
