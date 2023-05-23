@@ -1,6 +1,6 @@
 package Linked_List;
 
-public class InsertionAtEnd {
+public class Linked_List {
     Node head;
 
     // Node class
@@ -54,7 +54,7 @@ public class InsertionAtEnd {
     }
 
     public static void main(String[] args) {
-        InsertionAtEnd adde = new InsertionAtEnd();
+        Linked_List adde = new Linked_List();
         adde.insertAtEnd(5);
         adde.insertAtEnd(2);
         adde.insertAtEnd(8);
