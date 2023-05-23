@@ -89,8 +89,27 @@ public class Linked_List {
     }
 }
 
+/*
+                                                     ************* IMPORTANT *************
+
+
+    This code represents a simple implementation of a singly linked list in Java. Here are some comments added for better understanding:
+The Linked_List class represents the linked list and contains a reference to the head node.
+The Node class is an inner class that represents a node in the linked list. It contains a data field and a reference to the next node.
+The insertAtEnd method inserts a new node at the end of the linked list.
+The InsertAtBeginning method inserts a new node at the beginning of the linked list.
+The InsertAtAnyway method inserts a new node at any specified index in the linked list.
+The displayLink method traverses the linked list and prints the data of each node.
+In the main method, a new instance of Linked_List is created and various operations are performed on it to demonstrate the functionality of
+
+ */
+
 
 /*
+    ***********************************************************************************************************************************************************
+
+
+
 Certainly! Here's an explanation of the code:
 
 1. The `InsertionAtEnd` class represents a linked list. It has a reference to the head of the list.
