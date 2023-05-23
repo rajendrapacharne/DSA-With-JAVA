@@ -33,15 +33,24 @@ public class InsertionAtEnd {
         // Make the new node the next node of the last node
         temp.next = newNode;
     }
+    // Method to insert a new node at the Beginning of the linked list
+
+    public void InsertAtBeginning(int newdata)
+    {
+        Node newNode=new Node(newdata);
+        newNode.next=head;
+        head=newNode;
+    }
 
     // Method to display the linked list
     public void displayLink() {
         Node temp = head;
         while (temp != null) {
             // Print the data of each node
-            System.out.println(temp.data + " ");
+            System.out.print(temp.data + " ");
             temp = temp.next;
         }
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -51,8 +60,16 @@ public class InsertionAtEnd {
         adde.insertAtEnd(8);
         adde.insertAtEnd(9);
         adde.insertAtEnd(10);
+        System.out.println("Befor Insert At end 11");
+        adde.displayLink();
+        System.out.println("After Insert At end 11");
         adde.insertAtEnd(11);
         adde.displayLink();
+
+        System.out.println("After Inserting 1 at Beginning ");
+        adde.InsertAtBeginning(1);
+        adde.displayLink();
+
     }
 }
 
