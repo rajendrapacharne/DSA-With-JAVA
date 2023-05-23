@@ -33,13 +33,24 @@ public class Linked_List {
         // Make the new node the next node of the last node
         temp.next = newNode;
     }
-    // Method to insert a new node at the Beginning of the linked list
 
-    public void InsertAtBeginning(int newdata)
-    {
-        Node newNode=new Node(newdata);
-        newNode.next=head;
-        head=newNode;
+    // Method to insert a new node at the beginning of the linked list
+    public void InsertAtBeginning(int newdata) {
+        Node newNode = new Node(newdata);
+        newNode.next = head;
+        head = newNode;
+    }
+
+    // Method to insert a new node at any index of the linked list
+    public void InsertAtAnyway(Node prev_node, int newdata) {
+        if (prev_node == null) {
+            System.out.println("Cannot contain null value");
+            return;
+        }
+
+        Node newNode = new Node(newdata);
+        newNode.next = prev_node.next;
+        prev_node.next = newNode;
     }
 
     // Method to display the linked list
@@ -60,16 +71,21 @@ public class Linked_List {
         adde.insertAtEnd(8);
         adde.insertAtEnd(9);
         adde.insertAtEnd(10);
-        System.out.println("Befor Insert At end 11");
+        System.out.println("Before Inserting at the end: ");
         adde.displayLink();
-        System.out.println("After Insert At end 11");
+        System.out.println("After Inserting at the end: ");
         adde.insertAtEnd(11);
         adde.displayLink();
 
-        System.out.println("After Inserting 1 at Beginning ");
+        System.out.println("After Inserting 1 at the beginning: ");
         adde.InsertAtBeginning(1);
         adde.displayLink();
 
+        System.out.println("Before Inserting at any location: ");
+        adde.displayLink();
+        System.out.println("After Inserting at any location: ");
+        adde.InsertAtAnyway(adde.head.next.next, 1000);
+        adde.displayLink();
     }
 }
 
