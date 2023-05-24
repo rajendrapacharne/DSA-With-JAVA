@@ -53,6 +53,33 @@ public class Linked_List {
         prev_node.next = newNode;
     }
 
+    // deleting a Node
+
+    void deletelist(int position)
+    {   Node temp=head;
+        if(head==null)
+        {
+            return;
+        }
+
+        if(position==0)
+        {
+            head=temp.next;
+            return;
+        }
+        // Deleting not at beginning
+        for(int i=0;temp!=null && i<position-1;i++)
+        {
+            temp=temp.next;
+        }
+        if(temp==null && temp.next==null)
+        {
+            return;
+        }
+        temp.next=temp.next.next;
+
+    }
+
     // Method to display the linked list
     public void displayLink() {
         Node temp = head;
@@ -86,6 +113,13 @@ public class Linked_List {
         System.out.println("After Inserting at any location: ");
         adde.InsertAtAnyway(adde.head.next.next, 1000);
         adde.displayLink();
+
+        System.out.println("Before Deleting Node: ");
+        adde.displayLink();
+        adde.deletelist(2);
+        System.out.println("After Deleting Node: ");
+        adde.displayLink();
+
     }
 }
 
