@@ -117,6 +117,21 @@ class Linked_List {
         // Recursive function call
         Reverse_Recurrsivly_LinkedList(nextPtr,curr);
     }
+
+    // Middle of Linked List
+    public void miiddleliist()
+    {
+        Node slow=head;
+        Node fast=head;
+
+        while(fast!=null && fast.next!=null)
+        {
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        System.out.println(slow.data);
+
+    }
     // Method to display the linked list
     public void displayLink() {
         Node temp = head;
@@ -135,6 +150,7 @@ class Linked_List {
         adde.insertAtEnd(8);
         adde.insertAtEnd(9);
         adde.insertAtEnd(10);
+        adde.insertAtEnd(20);
         System.out.println("Before Inserting at the end: ");
         adde.displayLink();
         System.out.println("After Inserting at the end: ");
@@ -168,6 +184,12 @@ class Linked_List {
         adde.Reverse_Recurrsivly_LinkedList(adde.head,null);
         System.out.println("After Reverse the List Using Recursion: ");
         adde.displayLink();
+
+        System.out.println("Before Finding Middle of Linked List  : ");
+        adde.displayLink();
+        System.out.println("After Finding Middle of Linked List   : ");
+        adde.miiddleliist();
+
 
     }
 }
