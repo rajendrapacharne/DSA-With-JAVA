@@ -1,6 +1,6 @@
 package Linked_List;
 
-public class Linked_List {
+class Linked_List {
     Node head;
 
     // Node class
@@ -81,6 +81,42 @@ public class Linked_List {
 
     }
 
+    // Reverse the Linked List
+
+    public void reverselist()
+    {
+        Node curr=head;
+        Node prev=null;
+        Node nextPtr=null;
+
+        while(curr !=null)
+        {
+            nextPtr=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=nextPtr;
+        }
+
+        head=prev;
+        return;
+    }
+
+    // Reverse_Recurrsivly_LinkedList
+    public void Reverse_Recurrsivly_LinkedList(Node curr,Node prev)
+    {
+        // last node of linked list
+        if(curr.next==null)
+        {
+            head=curr;
+            curr.next=prev;
+            return;
+        }
+
+        Node nextPtr=curr.next;
+        curr.next=prev;
+        // Recursive function call
+        Reverse_Recurrsivly_LinkedList(nextPtr,curr);
+    }
     // Method to display the linked list
     public void displayLink() {
         Node temp = head;
@@ -119,6 +155,18 @@ public class Linked_List {
         adde.displayLink();
         adde.deletelist(2);
         System.out.println("After Deleting Node: ");
+        adde.displayLink();
+
+        System.out.println("Before Reverse the List : ");
+        adde.displayLink();
+        adde.reverselist();
+        System.out.println("After Reverse the List: ");
+        adde.displayLink();
+
+        System.out.println("Before Reverse the List Using Recursion : ");
+        adde.displayLink();
+        adde.Reverse_Recurrsivly_LinkedList(adde.head,null);
+        System.out.println("After Reverse the List Using Recursion: ");
         adde.displayLink();
 
     }
