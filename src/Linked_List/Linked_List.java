@@ -171,3 +171,23 @@ The code uses the insertion at the end technique to add elements to the linked l
 
 
  */
+
+/*
+In Java, linked list operations involve manipulating a linked list data structure, which is a collection of nodes. Each node contains a data element and a reference (or link) to the next node in the list. Linked lists are dynamic data structures, meaning that their size can change during runtime.
+
+Here are the commonly used linked list operations in Java:
+
+1. Insertion at the beginning: This operation involves creating a new node with the given data and making it the new head of the linked list. It requires updating the next reference of the new node to point to the current head node.
+
+2. Insertion at the end: This operation involves creating a new node with the given data and adding it at the end of the linked list. It requires traversing the list to reach the last node and updating its next reference to point to the new node.
+
+3. Insertion at a specific position: This operation involves creating a new node with the given data and inserting it at a specified position in the linked list. It requires updating the next references of the previous node and the new node to maintain the correct order.
+
+4. Deletion of a node: This operation involves removing a node from the linked list. It can be done by updating the next reference of the previous node to skip the node to be deleted, effectively removing it from the list.
+
+5. Searching for a node: This operation involves traversing the linked list to find a node with a specific value. It requires comparing the data element of each node with the target value until a match is found or the end of the list is reached.
+
+6. Displaying the linked list: This operation involves traversing the linked list and printing the data element of each node. It helps visualize the contents of the list.
+
+These operations can be implemented in various ways, depending on the specific requirements and constraints. The provided code snippet demonstrates a basic implementation of linked list operations in Java.
+ */
