@@ -62,12 +62,13 @@ public class Linked_List {
             return;
         }
 
+        // Deleting not at beginning
         if(position==0)
         {
             head=temp.next;
             return;
         }
-        // Deleting not at beginning
+
         for(int i=0;temp!=null && i<position-1;i++)
         {
             temp=temp.next;
