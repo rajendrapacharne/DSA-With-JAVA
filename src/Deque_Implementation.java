@@ -4,6 +4,7 @@ import java.util.Deque;
 public class Deque_Implementation {
     public static void main(String[] args) {
         // Create a new deque
+
         Deque<Integer> dq = new ArrayDeque<>();
 
         // Add elements to the front of the deque
