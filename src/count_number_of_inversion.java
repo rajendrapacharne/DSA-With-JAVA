@@ -1,5 +1,7 @@
 import java.util.Arrays;
 
+import static java.util.Arrays.copyOfRange;
+
 public class count_number_of_inversion {
     public static void main(String[] args) {
         int arr[] = {5, 4, 3, 2, 1};
@@ -36,8 +38,8 @@ public class count_number_of_inversion {
     }
 
     private static int mergeproceduure(int[] arr, int l, int mid, int h) {
-        int[] lsubarr = Arrays.copyOfRange(arr, l, mid + 1); // Left subarray
-        int[] rsubarr = Arrays.copyOfRange(arr, mid + 1, h + 1); // Right subarray
+        int[] lsubarr = copyOfRange(arr, l, mid + 1); // Left subarray
+        int[] rsubarr = copyOfRange(arr, mid + 1, h + 1); // Right subarray
 
         int i = 0, j = 0, k = l, swap = 0;
         while (i < lsubarr.length && j < rsubarr.length) {
