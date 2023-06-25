@@ -30,7 +30,9 @@ public class BubbleSort {
 }
 
 /*
-Bubble Sort is a simple and commonly used sorting algorithm. It gets its name from the way smaller elements "bubble" to the top of the list as the algorithm iterates through it. Bubble Sort works by repeatedly swapping adjacent elements if they are in the wrong order until the entire list is sorted.
+Bubble Sort is a simple and commonly used sorting algorithm. It gets its name from the way smaller elements
+ "bubble" to the top of the list as the algorithm iterates through it. Bubble Sort works by repeatedly swapping adjacent
+ elements if they are in the wrong order until the entire list is sorted.
 
 Here's a step-by-step explanation of how Bubble Sort works:
 
