@@ -9,6 +9,8 @@ public class symmetric_Tree {
        }
        if(left==null || right ==null)
        {
+
+           //false
            return false;
        }
 
