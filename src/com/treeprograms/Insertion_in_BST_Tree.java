@@ -43,6 +43,7 @@ public class Insertion_in_BST_Tree {
 
         InsertIntoBST(root, 20);
         InsertIntoBST(root, 7);
+        InsertIntoBST(root, 21);
         printBST(root);
     }
 }
