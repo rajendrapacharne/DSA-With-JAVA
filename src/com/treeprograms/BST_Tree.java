@@ -10,6 +10,7 @@ public class BST_Tree {
             return false;
         return check(root.left,min, (long) root.val) && check(root.right, (long) root.val,max);
     }
+    //
     private static boolean isvalidBST(Node root)
     {
         return check(root,Long.MIN_VALUE,Long.MAX_VALUE);
