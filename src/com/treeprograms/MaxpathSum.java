@@ -16,9 +16,6 @@ public class MaxpathSum {
         return root.val + Math.max(left, right);
     }
 
-
-    ///
-
     public static int sumOfMaxPath(Node root) {
         helper(root);
         return max;
