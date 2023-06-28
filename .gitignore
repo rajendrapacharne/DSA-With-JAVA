@@ -1,5 +1,6 @@
 ### IntelliJ IDEA ###
 
+src/Interview_Questions
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
