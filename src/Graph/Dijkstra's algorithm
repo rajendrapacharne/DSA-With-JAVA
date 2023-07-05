@@ -1,0 +1,44 @@
+Dijkstra's algorithm is a graph traversal algorithm used to find the shortest path between two nodes in a weighted graph. It was developed by Dutch computer scientist Edsger W. Dijkstra in 1956 and is widely used in various applications, such as routing algorithms in computer networks and GPS navigation systems.
+
+The algorithm works by maintaining a list of nodes and their tentative distances from the starting node. Initially, the distance to the starting node is set to 0, and the distances to all other nodes are set to infinity. As the algorithm progresses, it visits each node in the graph and updates the distances to its neighboring nodes if a shorter path is found.
+
+Here's a step-by-step explanation of Dijkstra's algorithm using an example:
+
+Let's consider a graph with the following nodes and edges:
+
+Nodes: A, B, C, D, E
+Edges: (A, B, 4), (A, C, 2), (B, D, 5), (C, D, 1), (C, E, 3), (D, E, 4)
+
+1. Initialize the algorithm:
+   - Set the starting node as the current node.
+   - Set the distance to the starting node as 0 and infinity for all other nodes.
+   - Mark all nodes as unvisited.
+
+2. Visit the current node (A):
+   - Update the distances of its neighboring nodes:
+     - Distance to B: 4 (A->B)
+     - Distance to C: 2 (A->C)
+   - Mark A as visited.
+
+3. Select the unvisited node with the smallest distance (C):
+   - Visit node C and update the distances of its neighboring nodes:
+     - Distance to D: 3 (A->C->D)
+     - Distance to E: 5 (A->C->E)
+   - Mark C as visited.
+
+4. Select the unvisited node with the smallest distance (D):
+   - Visit node D and update the distance of its neighboring node:
+     - Distance to E: 7 (A->C->D->E)
+   - Mark D as visited.
+
+5. Select the unvisited node with the smallest distance (B):
+   - Visit node B and update the distance of its neighboring node (D):
+     - Distance to D: 8 (A->B->D)
+   - Mark B as visited.
+
+6. Select the unvisited node with the smallest distance (E):
+   - Visit node E, and since it has no neighboring unvisited nodes, we stop the algorithm.
+
+The algorithm terminates when all nodes have been visited or the smallest distance to the target node has been found. In this example, the shortest path from node A to node E is A -> C -> D -> E, with a total distance of 7.
+
+Dijkstra's algorithm guarantees to find the shortest path in a graph with non-negative edge weights. It achieves this by greedily selecting the node with the smallest distance at each step, ensuring that the distances to all nodes are optimal.
