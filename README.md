@@ -1,9 +1,59 @@
+# Java with DSA Repository
 
-# Java With DSA
+This repository contains Java programs and data structures implementations for various algorithms and concepts related to Data Structures and Algorithms (DSA).
 
-Welcome to the DSA Programs Repository!
+## Table of Contents
 
-We are thrilled to have you here, embarking on a journey into the exciting world of Data Structures and Algorithms (DSA). This repository is your gateway to learning, exploring, and mastering the fundamental concepts that power efficient and optimized code.
+- [Binary_Search](src/Binary_Search.java)
+- [Binary_Tree](src/Binary_Tree.java)
+- [count_number_of_inversion](src/count_number_of_inversion.java)
+- [BubbleSort](src/BubbleSort.java)
+- [Deletion_In_Heap](src/Deletion_In_Heap.java)
+- [Deque_Implementation](src/Deque_Implementation.java)
+- [Divide and Conquer](src/Divide_and_Conquer.java)
+- [Factorial_Using_Recursion](src/Factorial_Using_Recursion.java)
+- [Fibonacci_series](src/Fibonacci_series.java)
+- [findingpowerusingrecursion](src/findingpowerusingrecursion.java)
+- [FractionalKnapsack](src/FractionalKnapsack.java)
+- [HashMapFunctions](src/HashMapFunctions.java)
+- [HeapSort](src/HeapSort.java)
+- [Insertion_Sort](src/Insertion_Sort.java)
+- [Insertion_In_Heap](src/Insertion_In_Heap.java)
+- [Job_Scheduling](src/Job_Scheduling.java)
+- [linear_search](src/linear_search.java)
+- [Main](src/Main.java)
+- [Merge_Sort](src/Merge_Sort.java)
+- [Merge_Intervals](src/Merge_Intervals.java)
+- [Queue_Implementation](src/Queue_Implementation.java)
+- [Queue_using_Stack](src/Queue_using_Stack.java)
+- [Quick_Sort](src/Quick_Sort.java)
+- [Linked_List](src/Linked_List.java)
+- [Graph](src/Graph.java)
+- [treeprograms](src/treeprograms.java)
+
+## How to Use
+
+1. Clone this repository to your local machine or download the source code files individually.
+2. Make sure you have Java Development Kit (JDK) installed on your system.
+3. Open the source code files in your favorite Java Integrated Development Environment (IDE) or text editor.
+4. Compile and run the Java programs.
+
+Please note that these programs are provided as learning resources and may not be optimized for all scenarios. Feel free to modify and enhance them as needed.
+
+## Contributing
+
+If you would like to contribute to this repository, you can fork the project, make changes, and submit a pull request. Your contributions are highly appreciated!
+
+## License
+
+This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code as per the terms of this license.
+
+## Acknowledgements
+
+- This repository was created as part of a Java with DSA course.
+- Thanks to all the contributors who have added programs to this repository.
+
+If you have any questions or suggestions, feel free to reach out. Happy coding!
 
 
 ## 🛠 Skills Required
